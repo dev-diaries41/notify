@@ -11,7 +11,7 @@
 
 The `Notify` class is a versatile utility designed for sending notifications through various channels, such as email, Telegram, and Discord. It offers developers a straightforward and unified interface, making it easy to seamlessly integrate notification functionality into their applications. The documentation is using module syntax throughout.
 
-Notify is a fundamental aspect of an automated AI task system that I am building by integrating Notify with Langhchain Agents. For more details, refer to the documentation [here](https://devdiaries41.substack.com/p/autonomous-task-system).
+Notify is a fundamental aspect of an automated AI task system that I am building by integrating Notify with Langhchain Agents. Read more [here](https://devdiaries41.substack.com/p/autonomous-task-system).
 
 
 ## How to Install

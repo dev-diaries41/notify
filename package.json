@@ -1,0 +1,35 @@
+{
+  "name": "notify",
+  "version": "1.0.0",
+  "description": "A notification utility to send messages via Telegram and Discord",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-diaries41/notify.git"
+  },
+  "keywords": [
+    "notification",
+    "telegram",
+    "discord"
+  ],
+  "bugs": {
+    "url": "https://github.com/dev-diaries41/notify/issues"
+  },
+  "homepage": "https://github.com/dev-diaries41/notify#readme",
+  "author": "d41dev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "@types/node-telegram-bot-api": "^0.64.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.65.1"
+  }
+}

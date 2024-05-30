@@ -20,7 +20,7 @@ To install the `notify` module, follow these steps:
 Enter the following command in your terminal:
 
 ```bash
-git clone 'add url'
+git clone 'https://github.com/dev-diaries41/notify.git'
 ```
 
 Change into the cloned repository directory:

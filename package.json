@@ -1,5 +1,5 @@
 {
-  "name": "@d41dev/notify",
+  "name": "d41-notify",
   "version": "1.0.0",
   "description": "A notification utility to send messages via Telegram and Discord",
   "main": "dist/index.js",

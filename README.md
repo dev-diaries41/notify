@@ -1,6 +1,4 @@
-Sure, here's the complete documentation based on your `Notify` class implementation:
-
-# notify
+# Notify
 
 ## Table of Contents
 1. [Overview](#overview)

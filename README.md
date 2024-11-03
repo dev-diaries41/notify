@@ -14,23 +14,9 @@ The `notify` module is a notification utility that allows you to send messages v
 
 To install the `notify` module, follow these steps:
 
-**Clone the repository:**
-Enter the following command in your terminal:
 
 ```bash
-git clone 'https://github.com/dev-diaries41/notify.git'
-```
-
-Change into the cloned repository directory:
-
-```bash
-cd notify
-```
-
-Install the required dependencies using npm:
-
-```bash
-npm install
+npm install notify-utils
 ```
 
 ## How To Use
@@ -42,11 +28,10 @@ You can get your Telegram bot token from the `Bot Father` Telegram channel. You 
 Example of sending a Telegram notification:
 
 ```typescript
-import { Notify } from './notify';
-import { NotifyConfig } from './constants/types';
+import { Notify } from 'notify-utils';
 
 // Your Telegram bot token from Bot Father
-const config: NotifyConfig = {
+const config = {
   telegramConfig: {
     token: 'YOUR_TELEGRAM_BOT_TOKEN'
   }
@@ -56,7 +41,7 @@ const config: NotifyConfig = {
 const notify = new Notify(config);
 
 // Send a message
-const chatId = 'TELEGRAM_CHAT_ID'; // Replace with the actual chat ID
+const chatId = 'TELEGRAM_CHAT_ID'; // Replace with the actual chat ID. For channels and groups the channel and group name can be used e.g @my_channel
 const message = 'Hello, this is a test message for Telegram!';
 notify.telegram(chatId, message)
   .then(response => {
@@ -70,11 +55,10 @@ notify.telegram(chatId, message)
 Example of sending a Discord notification:
 
 ```typescript
-import { Notify } from './notify';
-import { NotifyConfig } from './constants/types';
+import { Notify } from 'notify-utils';
 
 // Your Telegram bot token from Bot Father
-const config: NotifyConfig = {
+const config = {
   telegramConfig: {
     token: 'YOUR_TELEGRAM_BOT_TOKEN'
   }
@@ -98,11 +82,10 @@ notify.discord(webhookUrl, message)
 Example of sending a broadcast notification:
 
 ```typescript
-import { Notify } from './notify';
-import { NotifyConfig, Recipient } from './constants/types';
+import { Notify } from 'notify-utils';
 
 // Your Telegram bot token from Bot Father
-const telegramConfig: NotifyConfig = {
+const config = {
   telegramConfig: {
     token: 'YOUR_TELEGRAM_BOT_TOKEN'
   }
@@ -112,7 +95,7 @@ const telegramConfig: NotifyConfig = {
 const notify = new Notify(telegramConfig);
 
 // Define recipients
-const recipients: Recipient[] = [
+const recipients = [
   { telegramChatId: 'TELEGRAM_CHAT_ID_1' },
   { discordWebhookUrl: 'DISCORD_WEBHOOK_URL_1' }
   // Add more recipients as needed

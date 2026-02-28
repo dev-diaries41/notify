@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dev-diaries41/notify.git"
+    "url": "git+https://github.com/dev-diaries41/notify.git"
   },
   "keywords": [
     "notification",

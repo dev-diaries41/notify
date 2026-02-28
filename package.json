@@ -1,6 +1,6 @@
 {
   "name": "notify-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A notification utility to send messages via Telegram and Discord",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,11 +26,17 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.28",
-    "@types/node-telegram-bot-api": "^0.64.6",
+    "@types/node-telegram-bot-api": "^0.64.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.65.1"
+    "@cypress/request": "^3.0.10",
+    "@cypress/request-promise": "^5.0.0"
+  },
+  "overrides": {
+    "form-data": "4.0.5",
+    "qs": "6.14.2",
+    "tough-cookie": "5.1.2"
   }
 }

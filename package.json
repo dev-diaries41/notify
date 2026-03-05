@@ -1,6 +1,6 @@
 {
   "name": "notify-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A notification utility to send messages via Telegram and Discord",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

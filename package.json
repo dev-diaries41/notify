@@ -32,7 +32,8 @@
   },
   "dependencies": {
     "@cypress/request": "^3.0.10",
-    "@cypress/request-promise": "^5.0.0"
+    "@cypress/request-promise": "^5.0.0",
+    "node-telegram-bot-api": "^0.67.0"
   },
   "overrides": {
     "form-data": "4.0.5",
